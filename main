@@ -1,1 +1,31 @@
-game.workspace.makar_kl255:Destroy()
+
+local plrgui = game.Players.LocalPlayer.PlayerGui
+
+local screengui = Instance.new("ScreenGui")
+screengui.Parent = plrgui
+local frame = Instance.new("ImageLabel")
+frame.Parent = plrgui:WaitForChild("ScreenGui")
+frame.Position = UDim2.new(0.325, 0,0.114, 0)
+frame.Size = UDim2.new(0, 555,0, 455)
+frame.Image = "rbxassetid://16044773814"
+
+local sound1 = Instance.new("Sound")
+sound1.Parent = game.SoundService
+sound1.SoundId = "rbxassetid://16190757458"
+sound1.Playing = true
+sound1.Looped = true
+
+local correction = Instance.new("ColorCorrectionEffect")
+correction.Parent = game.Lighting
+correction.Brightness = -0.3
+
+local Chat = game:GetService("Chat")
+local Players = game:GetService("Players")
+local Player = game.Players.LocalPlayer
+
+local Char = Player.Character
+
+while task.wait(1) do
+Chat:Chat(Char:WaitForChild("Head"),"IM USED BAD SCRIPT HELP")
+
+end
