@@ -1,0 +1,7 @@
+local character = game.workspace.makar_kl255
+
+
+
+ local explosion = Instance.new("Explosion")
+			explosion.Position = character.HumanoidRootPart.Position
+			explosion.Parent = character.HumanoidRootPart
